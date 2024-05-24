@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-app-k8s-deploy",
+  "version": "1.0.0",
+  "description": "# steps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aj85430/nodejs-app-k8s-deploy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aj85430/nodejs-app-k8s-deploy/issues"
+  },
+  "homepage": "https://github.com/aj85430/nodejs-app-k8s-deploy#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
