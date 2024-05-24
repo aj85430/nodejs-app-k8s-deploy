@@ -90,7 +90,12 @@ For different environments we can use different values file such as for sit valu
 Refer the best practices from here: (written by me)
 
 https://devopscube.com/build-docker-image/
+-----
+
 https://devopscube.com/create-helm-chart/
+-----
+
+Thanks
 
  
 
