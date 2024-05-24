@@ -52,13 +52,13 @@ helm upgrade --install ingress-nginx ingress-nginx   --repo https://kubernetes.g
 
 Check the status of pod, service, and other objects in the ingress-nginx namespace.
 
-To verify whether it is working or not I have added the host in the /etc/hosts file as the load-balancer is not provisioned as not using any cloud or any provider.
+To verify whether it is working or not, I have added the host in the /etc/hosts file as the load-balancer is not provisioned as not using any cloud or any provider.
 
 vi /etc/hosts
 
 add and save it --> 127.0.0.1 chart-example.local
 
-Now to test forward the traffic to the port 80 and curl the host
+Now to test forward the traffic to port 80 and curl the host
 
 k port-forward -n ingress-nginx services/ingress-nginx-controller 3000:80
 
@@ -86,6 +86,11 @@ helm uninstall aman
 Best Practices:
 
 For different environments we can use different values file such as for sit values-sit.yaml, for uat values-uat.yaml and for prod values-prod.yaml. In this way we can use generic templates and rendered the required values as per the enviroments.
+
+Refer the best practices from here: (written by me)
+
+https://devopscube.com/build-docker-image/
+https://devopscube.com/create-helm-chart/
 
  
 
